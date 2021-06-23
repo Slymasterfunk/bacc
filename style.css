@@ -3,3 +3,7 @@ body::before {
   content: '';
   height: 60px;
 }
+
+.why-text {
+  font-size: 55px;
+}
