@@ -7,3 +7,7 @@ body::before {
 .why-text {
   font-size: 35px;
 }
+
+.hidden {
+  display: none;
+}
