@@ -48,7 +48,7 @@
                     <h1>We got your <span class="text-info"> BACC </span></h1>
                     <p class="lead my-4">Promoting and maintaining a spirit of comradeship and espirit de corps among Airman of all races.</p>
                     <button 
-                        class="btn btn-info btn-lg hidden" 
+                        class="btn btn-info btn-lg" 
                         data-bs-toggle="modal" 
                         data-bs-target="#enrollModal"
                     >Join Today</button>
@@ -248,7 +248,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="enrollModalLabel">BACC Enrollment Form</h5>
+                    <h5 class="modal-title" id="enrollModalLabel">BACC Enrollment</h5>
                     <button 
                         type="button" 
                         class="btn-close" 
@@ -258,27 +258,38 @@
                 </div>
                 <div class="modal-body">
                     <form 
-                        name='enrollment' 
-                        method='POST' 
-                        netlify-honeypot='bot-field'
-                        data-netlify='true' 
+                        name="enrollment" 
+                        method="POST" 
+                        netlify-honeypot="bot-field"
+                        data-netlify="true"
                         netlify
                     >
-                        <input type="hidden" name="form-name" value="contact">
                         <p class="hidden">
                             <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                         </p>
                         <div class="mb-3">
-                            <input type="text" name="name" placeholder="Name" class="form-control" />
+                            <input 
+                            type="text"  
+                            name="name" 
+                            placeholder="Name" 
+                            required />
                         </div>
                         <div class="mb-3">
-                            <input type="email" name="email" placeholder="Email" class="form-control" />
+                            <input 
+                            type="email"  
+                            name="email" 
+                            placeholder="Email"
+                            required />
                         </div>
                         <div class="mb-3">
-                            <input type="text" name="unit" placeholder="Unit" class="form-control" />
+                            <input 
+                            type="text" 
+                            name="unit" 
+                            placeholder="Unit" 
+                            required />
                         </div>
-                        <input type="submit" value="Submit" class="btn btn-info" />
-                    </form>
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>             
                 </div>
             </div>
         </div>
